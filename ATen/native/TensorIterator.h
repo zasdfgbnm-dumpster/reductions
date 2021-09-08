@@ -1,5 +1,8 @@
 #pragma once
 
+#include <c10/util/ArrayRef.h>
+#include <c10/core/ScalarType.h>
+
 namespace at {
 
 class TensorIterator;
@@ -28,6 +31,7 @@ public:
   int64_t element_size(int arg) const { return 0; }
   int num_reduce_dims() const { return 0; }
   void* data_ptr(int arg) const { return nullptr; }
+  ScalarType dtype(int arg=0) const { return {}; }
 
   bool can_use_32bit_indexing() const { return false; }
   bool should_accumulate() const { return false; }
