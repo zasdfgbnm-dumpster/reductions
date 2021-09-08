@@ -6,3 +6,7 @@
 *.fatbin
 *.out
 *.o
+*.cudafe1.*
+*.cudafe1.*.*
+*.fatbin.c
+*.module_id
