@@ -10,3 +10,4 @@
 *.cudafe1.*.*
 *.fatbin.c
 *.module_id
+*.txt
